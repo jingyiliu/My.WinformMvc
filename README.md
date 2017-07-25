@@ -3,7 +3,7 @@ My.WinformMvc brings the mvc pattern into winform development. It helps to seper
 
 ### Usage
 
-```s
+```cs
 using System;
 using System.Windows.Forms;
 using ContactManager.Repository;
