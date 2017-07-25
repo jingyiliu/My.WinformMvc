@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58A2C344-C8D6-4660-B760-7AC76013A9EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My.WinformMvc</RootNamespace>
+    <AssemblyName>My.WinformMvc</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\AsyncActionInvoker.cs" />
+    <Compile Include="DataBinding\DataBindingAttribute.cs" />
+    <Compile Include="DataBinding\DataBindingManager.cs" />
+    <Compile Include="Navigation\OpenActionResult.cs" />
+    <Compile Include="Navigation\OpenResult.cs" />
+    <Compile Include="Navigation\RedirectToResult.cs" />
+    <Compile Include="Navigation\HideViewResult.cs" />
+    <Compile Include="PairManager.cs" />
+    <Compile Include="Action\IActionInvoker.cs" />
+    <Compile Include="Action\ActionInvokerProvider.cs" />
+    <Compile Include="Navigation\ActionNames.cs" />
+    <Compile Include="Core\Disposable.cs" />
+    <Compile Include="Core\ControllerCloser.cs" />
+    <Compile Include="Foundation\Delegates.cs" />
+    <Compile Include="IControllerManager.cs" />
+    <Compile Include="IIocWrapper.cs" />
+    <Compile Include="IPairProvider.cs" />
+    <Compile Include="Navigation\CloseViewResult.cs" />
+    <Compile Include="Navigation\RedirectToActionResult.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Navigation\DisplayViewResult.cs" />
+    <Compile Include="IActionResult.cs" />
+    <Compile Include="BaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseView.Designer.cs">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControllerManager.cs" />
+    <Compile Include="IPairManager.cs" />
+    <Compile Include="Action\DefaultActionInvoker.cs" />
+    <Compile Include="Coordinator.cs" />
+    <Compile Include="ICoordinator.cs" />
+    <Compile Include="BaseController.cs" />
+    <Compile Include="IController.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="MvcControllerAttribute.cs" />
+    <Compile Include="MvcViewAttribute.cs" />
+    <Compile Include="Extensions\ExtensionMethods.cs" />
+    <Compile Include="Filters\FilterInfo.cs" />
+    <Compile Include="Filters\Contexts\ActionExecutedContext.cs" />
+    <Compile Include="Filters\Contexts\ActionExecutingContext.cs" />
+    <Compile Include="Filters\Contexts\AuthorizationContext.cs" />
+    <Compile Include="Filters\Contexts\ExceptionContext.cs" />
+    <Compile Include="Filters\Contexts\FilterContext.cs" />
+    <Compile Include="Filters\Contexts\ResultExecutedContext.cs" />
+    <Compile Include="Filters\Contexts\ResultExecutingContext.cs" />
+    <Compile Include="Filters\ActionFilterAttribute.cs" />
+    <Compile Include="Filters\AuthorizationFilterAttribute.cs" />
+    <Compile Include="Filters\ExceptionFilterAttribute.cs" />
+    <Compile Include="Filters\ResultFilterAttribute.cs" />
+    <Compile Include="Filters\IActionFilter.cs" />
+    <Compile Include="Filters\IAuthorizationFilter.cs" />
+    <Compile Include="Filters\IExceptionFilter.cs" />
+    <Compile Include="Filters\IResultFilter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Logger.cs" />
+    <Compile Include="Validation\ModelState.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="Navigation\ViewNavigation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\My.IoC\My.IoC.csproj">
+      <Project>{985CAB3C-9DCF-40DF-B14E-76F8CBD57EEE}</Project>
+      <Name>My.IoC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

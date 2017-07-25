@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BriefDescriptionOfTheRequestedServiceIs" xml:space="preserve">
+    <value>A brief descrption of the requested service is:</value>
+  </data>
+  <data name="CanNotFoundQualifiedConstructorForDynamicType" xml:space="preserve">
+    <value>Can not find a qualified constructor for the dynamic type {0}!</value>
+  </data>
+  <data name="CanNotGetValidAssemblyFileName" xml:space="preserve">
+    <value>Can not get a valid assembly file name!</value>
+  </data>
+  <data name="CyclicDependencyFoundWhileBuildingInstanceForType" xml:space="preserve">
+    <value>Cyclic dependency found while building an instance for type {0}!</value>
+  </data>
+  <data name="DeclaringTypeIsNotExceptionOrDerivedFromException" xml:space="preserve">
+    <value>The declaring type of the provided constructor is not an Exception, nor does it derive from Exception!</value>
+  </data>
+  <data name="InstanceCanOnlyBeRegisteredInSingletonLifetime" xml:space="preserve">
+    <value>When registering an instance, the lifetime can only be {0} or one of the type that derive from it, while the provided type is {1}!</value>
+  </data>
+  <data name="InvalidAssemblyFileName" xml:space="preserve">
+    <value>Invalid assembly file name: </value>
+  </data>
+  <data name="InvalidDirectoryPath" xml:space="preserve">
+    <value>Invalid directory path: </value>
+  </data>
+  <data name="InvalidFileName" xml:space="preserve">
+    <value>Invalid file name: </value>
+  </data>
+  <data name="NonautowirableParameterNotSpecified" xml:space="preserve">
+    <value>The [{0}th] parameter provided for the selected constructor of the type [{1}] is of type [{2}], which is not autowirable and must be explicitly specified!</value>
+  </data>
+  <data name="NoObjectRegistrationsFoundForContractType" xml:space="preserve">
+    <value>No object registrations found for the contract type {0}!</value>
+  </data>
+  <data name="ObjectBuilderRegisteredWithTypeCanNotBeFound" xml:space="preserve">
+    <value>An ObjectBuilder registered with type {0} can not be found!</value>
+  </data>
+  <data name="ObjectCanNotBeNull" xml:space="preserve">
+    <value>The [{0}] can not be null!</value>
+  </data>
+  <data name="ParameterIsNotAutowirableAndShouldExplicitlyProvideAValue" xml:space="preserve">
+    <value>A parameter of type {0} is not autowirable, which can not be determined by the container automatically, and should be explicitly provided with a value!</value>
+  </data>
+  <data name="ParameterNumberExceeds" xml:space="preserve">
+    <value>The number of parameters provided for the selected constructor of the type [{0}] exceeds what is needed! The maximum acceptable number of parameters is [{1}], while the provided number is [{2}]!</value>
+  </data>
+  <data name="ParameterNumberIsWrong" xml:space="preserve">
+    <value>The number of parameters passed to build a object instance is wrong! The constructor needs {0} parameter(s), while {1} parameter(s) was provided!</value>
+  </data>
+  <data name="RedundantParametersProvided" xml:space="preserve">
+    <value>No parameters is needed for the selected constructor of type [{0}], while there were parameters provided!</value>
+  </data>
+  <data name="RequiredParameterNotProvided" xml:space="preserve">
+    <value>One parameter of the selected constructor for type [{0}] is of [{1}], this parameter is not autowirable and needs to explicitly specify a value, while no value has been provided for it at the time of registration!</value>
+  </data>
+  <data name="StringCanNotBeNullOrEmpty" xml:space="preserve">
+    <value>The [{0}] can not be null or empty!</value>
+  </data>
+  <data name="SuppliedTypeIsNotAssignableFromOpenGenericType" xml:space="preserve">
+    <value>The supplied type [{0}] is not assignable from the open generic type {1}.</value>
+  </data>
+  <data name="SuppliedTypeIsNotAssignableFromType" xml:space="preserve">
+    <value>The supplied type [{0}] is not assignable from type {1}.</value>
+  </data>
+  <data name="SuppliedTypeIsNotAutowirable" xml:space="preserve">
+    <value>The supplied type [{0}] is not a autowirable type. An autowirable type is a reference type and can not be System.Type or System.String!</value>
+  </data>
+  <data name="SuppliedTypeIsNotConcreteType" xml:space="preserve">
+    <value>The supplied type [{0}] is not a concrete type!</value>
+  </data>
+  <data name="SuppliedTypeIsNotOpenGeneric" xml:space="preserve">
+    <value>The supplied type [{0}] is not an open generic type!</value>
+  </data>
+  <data name="SuppliedTypeIsOpenGeneric" xml:space="preserve">
+    <value>The supplied type [{0}] is an open generic type.</value>
+  </data>
+  <data name="SuppliedTypeSupposedToHaveOneGenericArgsOnly" xml:space="preserve">
+    <value>The supplied type [{0}] is supposed to have one generic argument only!</value>
+  </data>
+  <data name="TheCallPathIs" xml:space="preserve">
+    <value>The call path is:</value>
+  </data>
+  <data name="UseLoadThisMethodInstead" xml:space="preserve">
+    <value>Use [LoadThis] method instead if you want to load [this]!</value>
+  </data>
+  <data name="SuppliedTypeIsNotPublicType" xml:space="preserve">
+    <value>The supplied type [{0}] is not a public type!</value>
+  </data>
+</root>

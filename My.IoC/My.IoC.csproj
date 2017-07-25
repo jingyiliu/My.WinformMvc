@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{985CAB3C-9DCF-40DF-B14E-76F8CBD57EEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My</RootNamespace>
+    <AssemblyName>My.IoC</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET20, RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Emit\ConstructorBuilderExtension.cs" />
+    <Compile Include="Helpers\StringExtensions.cs" />
+    <Compile Include="IoC\ActivatorKind.cs" />
+    <Compile Include="IoC\Configuration\Injection\IConstructorInjectionConfigurationItem.cs" />
+    <Compile Include="IoC\Configuration\Injection\IInjectionConfigurationInterpreter.cs" />
+    <Compile Include="IoC\Configuration\Injection\IMemberInjectionConfigurationItem.cs" />
+    <Compile Include="IoC\Configuration\Injection\InjectionConfigurationGroup.cs" />
+    <Compile Include="IoC\Condition\IInjectionCondition.cs" />
+    <Compile Include="IoC\Core\AutoObjectRegistrar.cs" />
+    <Compile Include="IoC\Core\IAutoRegistrationPolicy.cs" />
+    <Compile Include="IoC\Core\Logger.cs" />
+    <Compile Include="IoC\Dependencies\AutowiredDependencyProvider.cs" />
+    <Compile Include="IoC\Dependencies\DependencyUpdater.cs" />
+    <Compile Include="Helpers\Requires.Internal.cs" />
+    <Compile Include="IoC\Injection\Emit\DummyEmitInjector.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitParameterMergerBuilder.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitInjectorKey.cs" />
+    <Compile Include="IoC\Injection\Reflection\ReflectionMemberInjector.cs" />
+    <Compile Include="IoC\Activities\InjectionActivity.cs" />
+    <Compile Include="IoC\Activities\InjectionProcess.cs" />
+    <Compile Include="IoC\Core\IHasKernel.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitParameterMerger.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\ICommonConfigurationApi.cs" />
+    <Compile Include="IoC\Configuration\Injection\InjectionConfigurationSet.cs" />
+    <Compile Include="IoC\Helpers\ParameterException.cs" />
+    <Compile Include="IoC\Configuration\Provider\ReflectionOrEmitRegistrationProvider.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReflectionOrEmitRegistrationProvider.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IoC\ILifetimeScope.cs" />
+    <Compile Include="IoC\Injection\Injector.cs" />
+    <Compile Include="IoC\IRegistrationModule.cs" />
+    <Compile Include="IoC\Lifetimes\ILifetimeProvider.cs" />
+    <Compile Include="IoC\Lifetimes\SingletonLifetime.cs" />
+    <Compile Include="IoC\ParameterSet.cs" />
+    <Compile Include="IoC\Core\ObjectRelation.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitInjectorManager.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitParameterMerger.Generic.cs" />
+    <Compile Include="IoC\IObjectObserver.cs" />
+    <Compile Include="IoC\Mapping\IObjectMapperBuilder.cs" />
+    <Compile Include="IoC\Core\InjectionOperator.cs" />
+    <Compile Include="IoC\Observers\ObjectObserver.cs" />
+    <Compile Include="IoC\Observers\ObjectCollectionObserver.cs" />
+    <Compile Include="IoC\Observers\ObjectObserverImpl.cs" />
+    <Compile Include="IoC\Observers\ObjectCollectionObserverImpl.cs" />
+    <Compile Include="IoC\Registry\ObjectBuilderRegistry.cs" />
+    <Compile Include="IoC\Registry\ObjectBuilderRegistry.RegisterUnregister.cs" />
+    <Compile Include="IoC\Dependencies\Resolution\DependencyResolver.cs" />
+    <Compile Include="IoC\Core\ObjectRegistration.cs" />
+    <Compile Include="IoC\Parameter.cs" />
+    <Compile Include="IoC\Configuration\IConfigurationApi.cs" />
+    <Compile Include="IoC\Configuration\Provider\ReflectionOrEmitRegistrationProvider.cs" />
+    <Compile Include="IoC\Core\ThreadedRegistrationCommitter.cs" />
+    <Compile Include="IoC\Core\RegistrationCommitter.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\ReflectionOrEmitConfigurationApi.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\CommonConfigurationApi.cs" />
+    <Compile Include="IoC\RegistrationExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoC\Configuration\Provider\FuncRegistrationProvider.cs" />
+    <Compile Include="IoC\IObjectCollectionObserver.cs" />
+    <Compile Include="IoC\ResolutionExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IoC\Configuration\Provider\RegistrationProvider.cs" />
+    <Compile Include="IoC\Configuration\Provider\InstanceRegistrationProvider.cs" />
+    <Compile Include="Helpers\Requires.cs" />
+    <Compile Include="IoC\Helpers\TypeExtensions.cs" />
+    <Compile Include="IoC\Mapping\ObjectMapperManager.cs" />
+    <Compile Include="IoC\Mapping\IObjectMapper.cs" />
+    <Compile Include="Exceptions\Exceptions.cs" />
+    <Compile Include="IoC\Core\RegistrationState.cs" />
+    <Compile Include="Emit\MethodBuilderExtension.cs" />
+    <Compile Include="Helpers\EnumerableExtensions.cs" />
+    <Compile Include="IoC\Helpers\SystemHelper.cs" />
+    <Compile Include="IoC\Dependencies\ConstantDependencyProvider.cs" />
+    <Compile Include="IoC\Dependencies\DependencyProviderException.cs" />
+    <Compile Include="IoC\Condition\InjectionTargetInfo.cs" />
+    <Compile Include="IoC\Condition\IInjectionTargetInfo.cs" />
+    <Compile Include="IoC\Injection\Emit\InjectorEmitBody.cs" />
+    <Compile Include="IoC\Extensions\OpenGeneric\OpenGenericRegistrationData.cs" />
+    <Compile Include="IoC\Extensions\OpenGeneric\OpenGenericRegistrationExtensions.cs" />
+    <Compile Include="IoC\Extensions\OpenGeneric\OpenGenericConfigurationApi.cs" />
+    <Compile Include="IoC\Extensions\OpenGeneric\OpenGenericRequestHandler.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\InstanceConfigurationApi.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\FuncConfigurationApi.cs" />
+    <Compile Include="IoC\Configuration\FluentApi\ITypeConfigurationApi.cs" />
+    <Compile Include="IoC\Lifetime.cs" />
+    <Compile Include="IoC\Core\IObjectRegistrar.cs" />
+    <Compile Include="IoC\Configuration\IRegistrationProvider.cs" />
+    <Compile Include="IoC\Registry\ObjectBuilderGroup.cs" />
+    <Compile Include="IoC\Injection\Instance\InstanceInjector.cs" />
+    <Compile Include="IoC\Injection\Func\FuncInjector.cs" />
+    <Compile Include="IoC\Injection\Reflection\ReflectionInjector.cs" />
+    <Compile Include="IoC\Core\IObjectResolver.cs" />
+    <Compile Include="IoC\IObjectRegistration.cs" />
+    <Compile Include="IoC\Activities\CompositeInjectionActivity.cs" />
+    <Compile Include="IoC\Core\InjectionContext.cs" />
+    <Compile Include="IoC\Core\IConstructorSorter.cs" />
+    <Compile Include="IoC\Core\ObjectDescription.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitInjectorProvider.cs" />
+    <Compile Include="Emit\EmitAssembly.cs" />
+    <Compile Include="Helpers\TypeExtensions.cs" />
+    <Compile Include="IoC\Dependencies\DependencyProvider.cs" />
+    <Compile Include="IoC\Helpers\ExceptionFormatter.cs" />
+    <Compile Include="IoC\Utils\ComponentContainer.cs" />
+    <Compile Include="IoC\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Threading\ILock.cs" />
+    <Compile Include="Threading\IReaderWriterLockSlim.cs" />
+    <Compile Include="Threading\MonitorLock.cs" />
+    <Compile Include="Threading\OptimisticReaderWriterLock.cs" />
+    <Compile Include="Threading\Spin.cs" />
+    <Compile Include="Threading\SpinLockSlim.cs" />
+    <Compile Include="IoC\Core\AscendingConstructorSorter.cs" />
+    <Compile Include="IoC\Core\BindingFlagsConstructorFinder.cs" />
+    <Compile Include="IoC\Core\DefaultConstructorSelector.cs" />
+    <Compile Include="IoC\Core\Kernel.cs" />
+    <Compile Include="IoC\Exceptions\Exceptions.cs" />
+    <Compile Include="IoC\Lifetimes\ScopeLifetime.cs" />
+    <Compile Include="IoC\Registry\ObjectBuilderRegistry.TryGetContains.cs" />
+    <Compile Include="IoC\ObjectBuilder.cs" />
+    <Compile Include="IoC\ObjectContainer.cs" />
+    <Compile Include="IoC\ContainerOption.cs" />
+    <Compile Include="IoC\Injection\Emit\EmitInjectorBuilder.cs" />
+    <Compile Include="IoC\Core\IConstructorFinder.cs" />
+    <Compile Include="IoC\IObjectContainer.cs" />
+    <Compile Include="System\Delegates.cs" />
+    <Compile Include="Emit\EmitGenerator.cs" />
+    <Compile Include="System\Disposable.cs" />
+    <Compile Include="System\ExtensionAttribute.cs" />
+    <Compile Include="IoC\Core\IConstructorSelector.cs" />
+    <Compile Include="IoC\Lifetimes\Lifetime.cs" />
+    <Compile Include="IoC\Lifetimes\ContainerLifetime.cs" />
+    <Compile Include="IoC\Lifetimes\TransientLifetime.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IoC\Lifetimes\LifetimeScope.cs" />
+    <Compile Include="Threading\SpinReaderWriterLockSlim.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IoC\Configuration\Provider\ReflectionOrEmitRegistrationProvider.resx">
+      <DependentUpon>ReflectionOrEmitRegistrationProvider.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReflectionOrEmitRegistrationProvider.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IoC\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
