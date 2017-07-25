@@ -1,5 +1,5 @@
 # My.WinformMvc
-My.WinformMvc brings the mvc pattern into winform development. It helps to seperate the code, thus minimize the code coupling and improve the testability.
+My.WinformMvc brings the mvc pattern into winform development. It helps to separate code, minimize code coupling and improve testability.
 
 ### Usage
 
@@ -9,6 +9,12 @@ using System.Windows.Forms;
 using ContactManager.Repository;
 using ContactManager.Services;
 using ContactManager.Views;
+using ContactManager.DataMapping;
+using ContactManager.Filters;
+using ContactManager.Services;
+using ContactManager.Utils;
+using ContactManager.Views.Model;
+using ContactManager.Views.Utils;
 using My.IoC;
 using My.WinformMvc;
 
@@ -49,14 +55,6 @@ namespace ContactManager
     }
 }
 
-using ContactManager.DataMapping;
-using ContactManager.Filters;
-using ContactManager.Services;
-using ContactManager.Utils;
-using ContactManager.Views.Model;
-using ContactManager.Views.Utils;
-using My.WinformMvc;
-
 namespace ContactManager.Controllers
 {
     [MvcController(Constant.ListController)]
@@ -89,14 +87,6 @@ namespace ContactManager.Controllers
         }
     }
 }
-
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using ContactManager.Utils;
-using ContactManager.Views.Model;
-using ContactManager.Views.Utils;
-using My.WinformMvc;
 
 namespace ContactManager.Views
 {
