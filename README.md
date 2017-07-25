@@ -1,5 +1,5 @@
 # My.WinformMvc
-My.WinformMvc brings the mvc pattern into winform development. It helps to separate code, minimize code coupling and improve testability.
+My.WinformMvc brings the power of mvc pattern into winform development. It helps to separate code, minimize code coupling and improve testability.
 
 ### Usage
 
