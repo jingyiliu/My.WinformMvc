@@ -141,10 +141,10 @@ namespace ContactManager.Views
 }
 ```
 
-Screenshots:
+Screenshots:<br>
 
 ![Listview form](http://files.cnblogs.com/files/johnny-liu/winformmvc_listview.gif)
-(Listview form)
+(Listview form)<br>
 
 ![Login form](http://files.cnblogs.com/files/johnny-liu/winformmvc_login.gif)
 (Login form)
