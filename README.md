@@ -144,7 +144,7 @@ namespace ContactManager.Views
 Screenshots:<br>
 
 ![Listview form](http://files.cnblogs.com/files/johnny-liu/winformmvc_listview.gif)
-(Listview form)<br>
+<br>(Listview form)<br>
 
 ![Login form](http://files.cnblogs.com/files/johnny-liu/winformmvc_login.gif)
-(Login form)
+<br>(Login form)
